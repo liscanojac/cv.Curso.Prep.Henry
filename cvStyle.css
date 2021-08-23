@@ -1,0 +1,183 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: darkslategrey;
+}
+
+img {
+    width: 100%;
+}
+
+/* Titulo Section */
+
+.titulo {
+    background-color: royalblue;
+    padding: 1.5rem 0;
+    color: white;
+}
+
+.titulo .flex {
+    justify-content: space-around;
+}
+.titulo h1{
+    font-size: 3rem;
+}
+
+.titulo img{
+    height: 140px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Descripcion Section */
+
+.descripcion {
+    position: relative;
+    background-color: royalblue;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.descripcion h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.descripcion p{
+    margin-left: .7rem;
+    margin-bottom: .5rem;
+}
+
+.descripcion::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: white;
+    transform: skewY(-2deg);
+}
+
+/* Educacion Section */
+
+.educacion {
+    margin: 3rem 0;
+}
+
+.educacion .container {
+    margin-top: 5rem;
+}
+
+.educacion h3 {
+    font-size: 1.3rem;
+}
+
+.educacion .container > ul {
+    margin-left: 1.4rem;
+}
+
+.educacion .container ul ul {
+    margin-left: 1.4rem;
+}
+
+.educacion li p{
+    padding: .25rem 0;
+}
+
+.educacion li span {
+    font-weight: bold;
+    padding: .35rem 0;
+}
+
+/* Experiencia Section */
+
+.experiencia {
+    background-color: royalblue;
+    color: white;
+    padding: 3rem 0;
+}
+
+.experiencia h2 {
+    margin: 1rem 0;
+}
+
+.experiencia h4 {
+    margin-top: 2rem;
+}
+
+.experiencia p {
+    margin: 1rem 0;
+}
+
+.experiencia .card {
+    background-color: white;
+}
+
+/* Skills Section */
+
+.skills {
+    margin: 3rem 0;
+}
+
+.skills .flex {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills .card {    
+    text-align: center;
+    width: 120px;
+    height: 180px;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: midnightblue;
+    color: white;
+    padding: .5rem 0;
+}
+
+
+/* Utilities */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: .5px solid lightgray;
+}
